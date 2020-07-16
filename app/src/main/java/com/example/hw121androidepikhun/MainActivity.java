@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.autofill.AutofillValue;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -41,8 +42,13 @@ public class MainActivity extends AppCompatActivity {
 
 public void btnClClicked(View view){
     TextView textresult = findViewById(R.id.textresult);
+    TextView textName = findViewById(R.id.textName);
+    TextView textemail =findViewById(R.id.textEmail);
     textresult.setText("");
-
+    String name = getString(R.string.login);
+    textName.setText(name);
+    String email = getString(R.string.email);
+    textemail.setText(email);
 }
 
 
